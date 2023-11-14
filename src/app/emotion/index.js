@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 // emotion
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
-
+import EmotionGlobalStyles from "./emotion-global-styles";
 
 export default function EmotionProvider({ children }) {
 
@@ -30,6 +30,7 @@ export default function EmotionProvider({ children }) {
 
     return (
         <CacheProvider value={cache}>
+            <EmotionGlobalStyles />
             {children}
         </CacheProvider>
     );
