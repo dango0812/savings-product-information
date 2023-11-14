@@ -33,6 +33,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
+      <head>
+        {/* fonts */}
+        <link
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+          type="text/css"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         {children}
       </body>
