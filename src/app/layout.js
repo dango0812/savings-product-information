@@ -1,3 +1,8 @@
+// prop-types
+import PropTypes from 'prop-types';
+// emotion
+import EmotionProvider from './emotion';
+
 export const metadata = {
   title: '월급 참견',
   description: "'월급 참견'은 예·적금 상품을 추천하는 웹사이트에요.",
@@ -42,8 +47,14 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        {children}
+        <EmotionProvider>
+          {children}
+        </EmotionProvider>
       </body>
     </html>
   )
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.node
+};
