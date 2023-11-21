@@ -23,7 +23,6 @@ const globalStyles = css`
 
     /* link */
     a {
-        color: black;
         cursor: pointer;
         text-decoration: underline;
     }
@@ -32,11 +31,6 @@ const globalStyles = css`
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
         -webkit-appearance: none;
-    }
-
-    /* list */
-    ul {
-        list-style: none;
     }
 
     :root {
