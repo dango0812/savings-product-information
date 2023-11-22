@@ -9,6 +9,8 @@ import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import EmotionGlobalStyles from "./emotion-global-styles";
 
+
+
 export default function EmotionProvider({ children }) {
 
     const [cache] = useState(() => {
@@ -32,7 +34,10 @@ export default function EmotionProvider({ children }) {
         <CacheProvider value={cache}>
             <EmotionGlobalStyles />
             {children}
+
+         
         </CacheProvider>
+        
     );
 }
 
